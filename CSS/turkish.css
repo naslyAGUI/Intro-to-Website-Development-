@@ -1,0 +1,172 @@
+/*DEVELOPER: Nasly Aguilar, IS117-001, Fall, 2018 */
+
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html { 
+  background: url(../images/turk.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 770px;
+    margin: 0 auto;
+   
+    background-image: linear-gradient(
+	    30deg, #87cefa 0%, #c6e2ff 30%, white 50%, #b0e0e6 80%, #a5c7e9 100%);
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+/* the styles for the header */
+header {
+	padding: 1.5em 0 2em 0;
+
+	
+	background-image: linear-gradient(
+	    30deg, #87cefa 0%, #c6e2ff 30%, white 50%, #b0e0e6 80%, #a5c7e9 100%);
+}
+header h2 {
+	font-size: 175%;
+	color: #800000;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+header img {
+	float: left;
+	padding: 0 30px;
+}
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
+}
+
+
+/* the styles for the main content */
+main {
+	clear: left;
+}
+
+/* the styles for the section */
+section {
+	width: 525px;
+	float: right;
+	padding: 0 20px 20px 20px;
+}
+section h1 {
+	font-size: 150%;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+}
+section h2 {
+	color: #800000;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+section p {
+	padding-bottom: .5em;
+}
+section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+section ul {
+	padding: 0 0 .25em 1.25em;
+	list-style-type: circle;
+}
+section li {
+	padding-bottom: .35em;
+}
+
+/* the styles for the article */
+article {
+	padding: .5em 0;
+	
+}
+article h2 {
+	padding-top: 0;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+article img {
+	float: right;
+	margin: .5em 0 1em 1em;
+	border: 1px solid black;
+}
+
+/* the styles for the aside */
+aside {
+	width: 215px;
+	float: right;
+	padding: 0 0 20px 20px;
+}
+aside h2 {
+	color: #800000;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+aside img {
+	padding-bottom: 2em;
+  
+}
+
+/* the styles for the footer */
+footer {
+	background-color: #ffffff ;
+	clear: both;
+
+}
+footer p {
+	text-align: center;
+	color: black;
+	padding: 1em 0;
+}
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+	header { font-size: 135%; }
+	section li, article h2 { font-size: 120%; }
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+	header img { float: none; }
+	header { text-align: center; }
+	section {
+		float: none;
+		width: 95%;                     
+	}
+	body {
+		float: none;
+		padding-right: 2.5%;           
+		width: 95%;                    
+	}
+	article img { max-width: 30%; }
+	
+	#nav {
+		display: inline;
+	}
+	.slicknav_menu class {
+		display: block;
+		background-color: #800000 !important;
+	}
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 480px) {
+	body { font-size: 90%; }
+}
